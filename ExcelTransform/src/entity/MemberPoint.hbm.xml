@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="entity">
+<!-- 区域改动*************************************************************** -->
+	<class name="MemberPoint" table="thpart">
+<!-- 区域改动*************************************************************** -->
+		<id name="memname" column="memname">
+         <generator class="assigned">
+         </generator>
+		</id>
+		<property name="mgpsx" column="gpsx"></property>
+		<property name="mgpsy" column="gpsy"></property>
+		<property name="time" column="time"></property>	
+		<property name="honour" column="honour"></property>	
+		<property name="order" column="ordernum"></property>	
+		<property name="score" column="score"></property>	
+		<property name="weight" column="weight"></property>
+	</class>
+</hibernate-mapping>

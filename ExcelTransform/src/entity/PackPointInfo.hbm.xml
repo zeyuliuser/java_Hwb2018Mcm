@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="entity">
+	<class name="PackPointInfo" table="packpointinfo">
+		<id name="no" column="no">
+         <generator class="native">
+         </generator>
+		</id>
+		<property name="pointname1" column="pointname1"></property>
+		<property name="distance" column="distance"></property>
+		<property name="pointname2" column="pointname2"></property>	
+		<property name="clusterid" column="clusterid"></property>	
+	</class>
+</hibernate-mapping>
